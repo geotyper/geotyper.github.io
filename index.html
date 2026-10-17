@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>geotyper projects</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #0b0d11;
+        color: #d5d9e0;
+      }
+      body {
+        margin: 0;
+        padding: 40px 16px;
+      }
+      main {
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 0 0 8px;
+      }
+      .lead {
+        color: #8b93a3;
+        margin: 0 0 32px;
+      }
+      .card {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 20px;
+        background: #141820;
+        border: 1px solid #232936;
+        border-radius: 10px;
+        padding: 16px;
+        margin-bottom: 20px;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 6px;
+        display: block;
+      }
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+      }
+      .card p {
+        margin: 0 0 12px;
+        line-height: 1.5;
+      }
+      a {
+        color: #7fb0ff;
+      }
+      .links a {
+        margin-right: 14px;
+      }
+      @media (max-width: 640px) {
+        .card {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Projects</h1>
+      <p class="lead">Things that run in the browser, by geotyper.</p>
+
+      <article class="card">
+        <a href="./taut/"><img src="./taut.png" alt="Two fields of the taut automaton with the same stones" /></a>
+        <div>
+          <h2><a href="./taut/">taut</a></h2>
+          <p>
+            Soap films on a cellular automaton: a rubber band pulled taut around
+            stones, 2D and 3D foams that meet at Plateau's angles, films on wire
+            frames, living bubbles, and cells that divide in an egg or grow into a
+            tissue.
+          </p>
+          <p class="links">
+            <a href="./taut/">band</a>
+            <a href="./taut/foam.html">2D foam</a>
+            <a href="./taut/foam3d.html">3D foam</a>
+            <a href="./taut/wire.html">wire frames</a>
+            <a href="./taut/cells.html">cells</a>
+            <a href="https://github.com/geotyper/taut">source</a>
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
